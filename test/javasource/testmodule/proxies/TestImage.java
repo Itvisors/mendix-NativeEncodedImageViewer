@@ -17,6 +17,9 @@ public class TestImage extends system.proxies.Image
 	public enum MemberNames
 	{
 		Base64Data("Base64Data"),
+		AddDataPrefix("AddDataPrefix"),
+		ImageWidth("ImageWidth"),
+		ImageHeight("ImageHeight"),
 		PublicThumbnailPath("PublicThumbnailPath"),
 		FileID("FileID"),
 		Name("Name"),
@@ -117,6 +120,114 @@ public class TestImage extends system.proxies.Image
 	public final void setBase64Data(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String base64data)
 	{
 		getMendixObject().setValue(context, MemberNames.Base64Data.toString(), base64data);
+	}
+
+	/**
+	 * @return value of AddDataPrefix
+	 */
+	public final java.lang.Boolean getAddDataPrefix()
+	{
+		return getAddDataPrefix(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of AddDataPrefix
+	 */
+	public final java.lang.Boolean getAddDataPrefix(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Boolean) getMendixObject().getValue(context, MemberNames.AddDataPrefix.toString());
+	}
+
+	/**
+	 * Set value of AddDataPrefix
+	 * @param adddataprefix
+	 */
+	public final void setAddDataPrefix(java.lang.Boolean adddataprefix)
+	{
+		setAddDataPrefix(getContext(), adddataprefix);
+	}
+
+	/**
+	 * Set value of AddDataPrefix
+	 * @param context
+	 * @param adddataprefix
+	 */
+	public final void setAddDataPrefix(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Boolean adddataprefix)
+	{
+		getMendixObject().setValue(context, MemberNames.AddDataPrefix.toString(), adddataprefix);
+	}
+
+	/**
+	 * @return value of ImageWidth
+	 */
+	public final java.lang.Integer getImageWidth()
+	{
+		return getImageWidth(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ImageWidth
+	 */
+	public final java.lang.Integer getImageWidth(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.ImageWidth.toString());
+	}
+
+	/**
+	 * Set value of ImageWidth
+	 * @param imagewidth
+	 */
+	public final void setImageWidth(java.lang.Integer imagewidth)
+	{
+		setImageWidth(getContext(), imagewidth);
+	}
+
+	/**
+	 * Set value of ImageWidth
+	 * @param context
+	 * @param imagewidth
+	 */
+	public final void setImageWidth(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer imagewidth)
+	{
+		getMendixObject().setValue(context, MemberNames.ImageWidth.toString(), imagewidth);
+	}
+
+	/**
+	 * @return value of ImageHeight
+	 */
+	public final java.lang.Integer getImageHeight()
+	{
+		return getImageHeight(getContext());
+	}
+
+	/**
+	 * @param context
+	 * @return value of ImageHeight
+	 */
+	public final java.lang.Integer getImageHeight(com.mendix.systemwideinterfaces.core.IContext context)
+	{
+		return (java.lang.Integer) getMendixObject().getValue(context, MemberNames.ImageHeight.toString());
+	}
+
+	/**
+	 * Set value of ImageHeight
+	 * @param imageheight
+	 */
+	public final void setImageHeight(java.lang.Integer imageheight)
+	{
+		setImageHeight(getContext(), imageheight);
+	}
+
+	/**
+	 * Set value of ImageHeight
+	 * @param context
+	 * @param imageheight
+	 */
+	public final void setImageHeight(com.mendix.systemwideinterfaces.core.IContext context, java.lang.Integer imageheight)
+	{
+		getMendixObject().setValue(context, MemberNames.ImageHeight.toString(), imageheight);
 	}
 
 	@java.lang.Override
