@@ -275,5 +275,5 @@ export const listView = {
 //
 // Layoutgrid Styles
 export const layoutGrid = {
-    gutterSize: 15,
+    gutterSize: 5, // Adjusted
 };

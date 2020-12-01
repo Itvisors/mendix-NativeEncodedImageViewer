@@ -21,8 +21,7 @@ export class NativeEncodedImageViewer extends Component {
             return null;
         }
         if (!this.state.layout) {
-            // console.info("NativeDataImageViewer render, render empty view to get layout data");
-            return <View onLayout={event => this.handleLayoutEvent(event)}></View>;
+            return <View style={{ flex: 1 }} onLayout={event => this.handleLayoutEvent(event)}></View>;
         }
         // If image data does not start with data:image, set the prefix
         let imageDataPrefix;
@@ -47,15 +46,55 @@ export class NativeEncodedImageViewer extends Component {
         const imageHeight = Number(imageHeightAttr.value);
         let displayImageWidth = PixelRatio.roundToNearestPixel(imageWidth / pixelDensity);
         let displayImageHeight = PixelRatio.roundToNearestPixel(imageHeight / pixelDensity);
-        if (displayImageWidth > this.state.layout.width) {
+        // Determine width to use. If fixed width is set and less than available width, use is.
+        let widthToUse = this.state.layout.width;
+        const { widthMode, viewWidth, heightMode, viewHeight } = this.props;
+        if (widthMode && widthMode === "fixed" && viewWidth) {
+            const viewWidthValue = Number(viewWidth);
+            if (viewWidthValue > 0 && viewWidthValue < widthToUse) {
+                widthToUse = viewWidthValue;
+            }
+        }
+        if (displayImageWidth > widthToUse) {
             displayImageHeight = Math.round(displayImageHeight * (this.state.layout.width / displayImageWidth));
-            displayImageWidth = this.state.layout.width;
+            displayImageWidth = widthToUse;
+        }
+        const viewHeightvalue = viewHeight ? Number(viewHeight) : 0;
+        let containerWidth = displayImageWidth;
+        let containerHeight = displayImageHeight;
+        switch (widthMode) {
+            case "maximumSize":
+                containerWidth = this.state.layout.width;
+                displayImageWidth = this.state.layout.width;
+                break;
+
+            default:
+                break;
+        }
+        switch (heightMode) {
+            case "square":
+                displayImageHeight = displayImageWidth;
+                break;
+
+            case "maximumSize":
+                containerHeight = this.state.layout.height;
+                displayImageHeight = this.state.layout.height;
+                break;
+
+            case "fixed":
+                if (viewHeightvalue) {
+                    displayImageHeight = viewHeightvalue;
+                }
+                break;
+
+            default:
+                break;
         }
         return (
-            <View style={{ height: displayImageHeight }}>
+            <View style={{ width: containerWidth, height: containerHeight }}>
                 <Image
                     source={{ uri: imageDataPrefix + imageDataAttr.value }}
-                    resizeMode="contain"
+                    resizeMode={this.props.resizeMode}
                     style={{ width: displayImageWidth, height: displayImageHeight }}
                 ></Image>
             </View>
