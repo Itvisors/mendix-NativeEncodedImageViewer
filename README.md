@@ -26,13 +26,15 @@ The width and height can also be configured.
 
 Set width and height to maximum size for the resize options to have the most effect.
 
+When used in a list, it is advisable to use a fixed width and height.
+
 Width options:
 - **Image size**: The default, see above
 - **Maximum size**: The maximum available width is used
-- **Fixed**: Enter a fixed width. Ignored if no width is set
+- **Fixed**: Enter a fixed width.
 
 Height options:
 - **Image size**: The default, see above
 - **Square**: Square, defines a square box where height matches the width used. Useful in lists.
 - **Maximum size**: The maximum available height is used
-- **Fixed**: Enter a fixed height. Ignored if no height is set
+- **Fixed**: Enter a fixed height.
