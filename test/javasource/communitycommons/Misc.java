@@ -348,16 +348,19 @@ public class Misc {
 			throw new Exception("Assertion: odd number of dynamic arguments provided, please name every argument: " + args.length);
 		}
 
-		Map<String, Object> params = new LinkedHashMap<String, Object>();
-		for (int i = 0; i < args.length; i += 2) {
-			if (args[i] != null) {
-				params.put(args[i].toString(), args[i + 1]);
-			}
-		}
-
-		IContext c = getContextFor(context, username, sudoContext);
-
-		return Core.execute(c, microflowName, params);
+		
+		return null;
+		
+//		Map<String, Object> params = new LinkedHashMap<String, Object>();
+//		for (int i = 0; i < args.length; i += 2) {
+//			if (args[i] != null) {
+//				params.put(args[i].toString(), args[i + 1]);
+//			}
+//		}
+//
+//		IContext c = getContextFor(context, username, sudoContext);
+//
+//		return Core.execute(c, microflowName, params);
 	}
 
 	//MWE: based on: http://download.oracle.com/javase/6/docs/api/java/util/concurrent/Executor.html

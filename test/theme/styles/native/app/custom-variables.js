@@ -24,9 +24,15 @@ export const brand = {
 };
 //
 // Dark Mode - Inherits OS theme if possible
-export const darkMode = NativeModules && NativeModules.RNDarkMode && NativeModules.RNDarkMode.initialMode
-    ? NativeModules.RNDarkMode.initialMode === "dark"
-    : false;
+// Mendix 9 is different!
+// Safely check if Appearance API is available in this version of React Native
+const Appearance = require("react-native").Appearance;
+export const darkMode =
+    NativeModules && NativeModules.RNDarkMode && NativeModules.RNDarkMode.initialMode
+        ? NativeModules.RNDarkMode.initialMode === "dark"
+        : Appearance
+        ? Appearance.getColorScheme() === "dark"
+        : false;
 //
 // Background Colors
 const backgroundColor = darkMode ? "#000" : "#FFF";
@@ -151,7 +157,7 @@ export const input = {
     labelColor: font.color,
     labelColorDisabled: font.labelColorDisabled,
     borderColor: contrast.lower,
-    borderColorFocused: "",
+    borderColorFocused: contrast.low, // Adjusted
     backgroundColor: background.primary,
     backgroundColorDisabled: contrast.lowest,
     selectionColor: contrast.lower,
@@ -166,7 +172,7 @@ export const input = {
     // Alignment
     textAlign: "left",
     paddingHorizontal: spacing.smaller,
-    paddingVertical: spacing.small,
+    paddingVertical: Platform.select({ android: spacing.smaller, ios: spacing.small }), // Adjusted
 };
 //
 // Navigation Styles
