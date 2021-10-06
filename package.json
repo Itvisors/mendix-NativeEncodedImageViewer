@@ -1,7 +1,7 @@
 {
   "name": "nativeencodedimageviewer",
   "widgetName": "NativeEncodedImageViewer",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "Native base64 encoded image viewer ",
   "copyright": "ITvisors 2020",
   "author": "Marcel Groeneweg",
@@ -23,7 +23,7 @@
     "url": "https://github.com/Marcel Groeneweg/nativeencodedimageviewer/issues"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^8.18.3"
+    "@mendix/pluggable-widgets-tools": "^9.5.4"
   },
   "dependencies": {}
 }
