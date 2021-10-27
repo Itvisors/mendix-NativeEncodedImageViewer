@@ -4,10 +4,10 @@ View images from base64 encoded image data.
 ## Usage
 
 ### data value
-The widget can show base64 encoded images with or without the data:image prefix. If the prefix is not found, it is determined from the file name.
+The widget can show base64 encoded images with or without the data:image prefix. If the prefix is not found, it is determined from the file name. If you are sure the encoded data has the prefix, you do not need to set the file name attribute.
 
 ### Image dimensions
-The widget needs the image dimensions to work properly.
+The widget can use the actual image dimensions or a fixed view width/height.
 Set the width and height of the image on the widget.
 
 ### Resize mode
@@ -29,7 +29,7 @@ Set width and height to maximum size for the resize options to have the most eff
 When used in a list, it is advisable to use a fixed width and height.
 
 Width options:
-- **Image size**: The default, see above
+- **Image size**: The default, see above, requires image width/height attribute
 - **Maximum size**: The maximum available width is used
 - **Fixed**: Enter a fixed width.
 

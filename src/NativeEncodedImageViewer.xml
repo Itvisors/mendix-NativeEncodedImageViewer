@@ -8,13 +8,6 @@
     <studioProCategory>Images, videos &amp; files</studioProCategory>
     <properties>
         <propertyGroup caption="Image data">
-            <property key="imageNameAttr" type="attribute">
-                <caption>Image name</caption>
-                <description>Extension is used to set the proper data type. Defaults to jpg.</description>
-                <attributeTypes>
-                    <attributeType name="String" />
-                </attributeTypes>
-            </property>
             <property key="imageDataAttr" type="attribute">
                 <caption>Image data</caption>
                 <description>Base64 encoded image data. If the image data already starts with the prefix data:image... it is used as is. Otherwise the prefix is added using the extension of the image name</description>
@@ -22,15 +15,22 @@
                     <attributeType name="String" />
                 </attributeTypes>
             </property>
-            <property key="imageHeightAttr" type="attribute">
-                <caption>Image height</caption>
+            <property key="imageNameAttr" type="attribute" required="false">
+                <caption>Image name</caption>
+                <description>Extension is used to set the proper data type. Defaults to jpg.</description>
+                <attributeTypes>
+                    <attributeType name="String" />
+                </attributeTypes>
+            </property>
+            <property key="imageHeightAttr" type="attribute" required="false">
+                <caption>Image height, required for height mode Image size</caption>
                 <description></description>
                 <attributeTypes>
                     <attributeType name="Integer" />
                 </attributeTypes>
             </property>
-            <property key="imageWidthAttr" type="attribute">
-                <caption>Image width</caption>
+            <property key="imageWidthAttr" type="attribute" required="false">
+                <caption>Image width, required for width mode Image size</caption>
                 <description></description>
                 <attributeTypes>
                     <attributeType name="Integer" />

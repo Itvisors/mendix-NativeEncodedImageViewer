@@ -37,17 +37,8 @@ export class NativeEncodedImageViewer extends Component {
                 </View>
             );
         }
-        const { imageNameAttr, imageDataAttr, imageHeightAttr, imageWidthAttr } = this.props;
-        if (
-            !imageNameAttr ||
-            imageNameAttr.status !== "available" ||
-            !imageDataAttr ||
-            imageDataAttr.status !== "available" ||
-            !imageHeightAttr ||
-            imageHeightAttr.status !== "available" ||
-            !imageWidthAttr ||
-            imageWidthAttr.status !== "available"
-        ) {
+        const { imageDataAttr } = this.props;
+        if (!imageDataAttr || imageDataAttr.status !== "available") {
             return null;
         }
 
@@ -63,7 +54,8 @@ export class NativeEncodedImageViewer extends Component {
         } else {
             // Determine extension, defaults to jpg.
             let extension = "jpg";
-            const imageName = imageNameAttr.value;
+            const { imageNameAttr } = this.props;
+            const imageName = imageNameAttr?.value;
             if (imageName) {
                 const dotPos = imageName.lastIndexOf(".");
                 if (dotPos >= 0) {
@@ -87,8 +79,9 @@ export class NativeEncodedImageViewer extends Component {
             // If the image is too wide for the available space, we need to adjust the width/height values.
             // It seems a little weird, but just specifying the resizeMode alone does not cover it.
             const pixelDensity = PixelRatio.get();
-            const imageWidth = Number(imageWidthAttr.value);
-            const imageHeight = Number(imageHeightAttr.value);
+            const { imageHeightAttr, imageWidthAttr } = this.props;
+            const imageWidth = imageWidthAttr?.value ? Number(imageWidthAttr.value) : viewWidthvalue;
+            const imageHeight = imageHeightAttr?.value ? Number(imageHeightAttr.value) : viewHeightvalue;
             displayImageWidth = PixelRatio.roundToNearestPixel(imageWidth / pixelDensity);
             displayImageHeight = PixelRatio.roundToNearestPixel(imageHeight / pixelDensity);
             // Determine width to use. If fixed width is set and less than available width, use is.
