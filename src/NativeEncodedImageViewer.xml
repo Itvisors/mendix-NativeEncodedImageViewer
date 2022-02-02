@@ -68,7 +68,7 @@
             <property key="resizeMode" type="enumeration" defaultValue="cover">
                 <caption>Resize mode</caption>
                 <description>Cover: Image will cover available space, parts may be cut off.
-Cover: Image will fit in available space.
+Contain: Image will fit in available space.
 Stretch: Use available or set dimensions. Image aspect ratio may change.
 Repeat: Repeat the image if it is smaller than the available space.
 Center: Center the image, scale if necessary. See widget documentation for details.</description>
