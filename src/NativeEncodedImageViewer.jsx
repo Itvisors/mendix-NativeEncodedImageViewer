@@ -1,4 +1,4 @@
-import { Image, PixelRatio, Text, View } from "react-native";
+import { Image, PixelRatio, View } from "react-native";
 import { createElement, useState } from "react";
 
 export function NativeEncodedImageViewer(props) {
@@ -7,31 +7,7 @@ export function NativeEncodedImageViewer(props) {
     const { widthMode, viewWidth, heightMode, viewHeight } = props;
     const viewWidthvalue = viewWidth ? Number(viewWidth) : 0;
     const viewHeightvalue = viewHeight ? Number(viewHeight) : 0;
-    if ((widthMode === "fixed" && heightMode !== "fixed") || (heightMode === "fixed" && widthMode !== "fixed")) {
-        return (
-            <View>
-                <Text style={{ color: "red", fontSize: 14 }}>
-                    For view mode fixed, both width and height must use mode fixed
-                </Text>
-            </View>
-        );
-    }
-    if (widthMode === "fixed" && (!viewWidth || viewWidthvalue <= 0)) {
-        return (
-            <View>
-                <Text style={{ color: "red", fontSize: 14 }}>For fixed width mode, width must be set and positive</Text>
-            </View>
-        );
-    }
-    if (heightMode === "fixed" && (!viewHeight || viewHeightvalue <= 0)) {
-        return (
-            <View>
-                <Text style={{ color: "red", fontSize: 14 }}>
-                    For fixed height mode, height must be set and positive
-                </Text>
-            </View>
-        );
-    }
+
     const { imageDataAttr } = props;
     if (!imageDataAttr || imageDataAttr.status !== "available") {
         return null;
