@@ -1,7 +1,7 @@
 {
   "name": "nativeencodedimageviewer",
   "widgetName": "NativeEncodedImageViewer",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Native base64 encoded image viewer ",
   "copyright": "ITvisors 2020",
   "author": "Marcel Groeneweg",
