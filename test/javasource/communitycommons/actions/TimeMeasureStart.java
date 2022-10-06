@@ -40,7 +40,6 @@ public class TimeMeasureStart extends CustomJavaAction<java.lang.Boolean>
 
 	/**
 	 * Returns a string representation of this action
-	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

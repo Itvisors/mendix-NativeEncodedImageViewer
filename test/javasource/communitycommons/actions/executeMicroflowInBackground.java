@@ -51,7 +51,6 @@ public class executeMicroflowInBackground extends CustomJavaAction<java.lang.Boo
 
 	/**
 	 * Returns a string representation of this action
-	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

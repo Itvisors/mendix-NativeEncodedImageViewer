@@ -39,9 +39,9 @@ public class DuplicateFileDocument extends CustomJavaAction<java.lang.Boolean>
 	@java.lang.Override
 	public java.lang.Boolean executeAction() throws Exception
 	{
-		this.fileToClone = this.__fileToClone == null ? null : system.proxies.FileDocument.initialize(getContext(), __fileToClone);
+		this.fileToClone = __fileToClone == null ? null : system.proxies.FileDocument.initialize(getContext(), __fileToClone);
 
-		this.cloneTarget = this.__cloneTarget == null ? null : system.proxies.FileDocument.initialize(getContext(), __cloneTarget);
+		this.cloneTarget = __cloneTarget == null ? null : system.proxies.FileDocument.initialize(getContext(), __cloneTarget);
 
 		// BEGIN USER CODE
 		return Misc.duplicateFileDocument(this.getContext(), fileToClone.getMendixObject(), cloneTarget.getMendixObject());
@@ -50,7 +50,6 @@ public class DuplicateFileDocument extends CustomJavaAction<java.lang.Boolean>
 
 	/**
 	 * Returns a string representation of this action
-	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()
