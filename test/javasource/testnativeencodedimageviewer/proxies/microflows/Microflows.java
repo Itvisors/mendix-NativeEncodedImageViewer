@@ -2,7 +2,7 @@
 //
 // WARNING: Code you write here will be lost the next time you deploy the project.
 
-package testmodule.proxies.microflows;
+package testnativeencodedimageviewer.proxies.microflows;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -19,11 +19,11 @@ public class Microflows
 	@java.lang.Deprecated(since = "9.12", forRemoval = true)
 	public Microflows() {}
 
-	// These are the microflows for the TestModule module
-	public static void aCT_TestImage_Save(IContext context, testmodule.proxies.TestImage _testImage)
+	// These are the microflows for the TestNativeEncodedImageViewer module
+	public static void aCT_TestImage_Save(IContext context, testnativeencodedimageviewer.proxies.TestImage _testImage)
 	{
 		Map<java.lang.String, Object> params = new HashMap<>();
 		params.put("TestImage", _testImage == null ? null : _testImage.getMendixObject());
-		Core.microflowCall("TestModule.ACT_TestImage_Save").withParams(params).execute(context);
+		Core.microflowCall("TestNativeEncodedImageViewer.ACT_TestImage_Save").withParams(params).execute(context);
 	}
 }
