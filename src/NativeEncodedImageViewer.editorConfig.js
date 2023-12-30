@@ -8,6 +8,12 @@ export function getProperties(values, defaultProperties) {
     if (values.heightMode !== "fixed") {
         hidePropertyIn(defaultProperties, values, "viewHeight");
     }
+
+    if (!values.a11yEnabled) {
+        hidePropertyIn(defaultProperties, values, "a11yLabel");
+        hidePropertyIn(defaultProperties, values, "a11yHint");
+    }
+
     return defaultProperties;
 }
 

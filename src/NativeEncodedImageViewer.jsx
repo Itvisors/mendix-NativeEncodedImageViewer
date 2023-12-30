@@ -89,11 +89,18 @@ export function NativeEncodedImageViewer(props) {
         }
     }
     return (
-        <View style={{ width: containerWidth, height: containerHeight }}>
+        <View
+            style={{ width: containerWidth, height: containerHeight }}
+            testID={props.name}
+            accessible={props.a11yEnabled}
+            accessibilityHint={props.a11yHint?.value}
+            accessibilityLabel={props.a11yLabel?.value}
+        >
             <Image
                 source={{ uri: imageDataPrefix + imageDataAttr.value }}
                 resizeMode={props.resizeMode}
                 style={{ width: displayImageWidth, height: displayImageHeight }}
+                testID={`${props.name}$image`}
             ></Image>
         </View>
     );

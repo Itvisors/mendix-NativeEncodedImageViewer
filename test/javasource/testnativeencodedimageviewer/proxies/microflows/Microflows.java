@@ -4,26 +4,34 @@
 
 package testnativeencodedimageviewer.proxies.microflows;
 
-import java.util.HashMap;
-import java.util.Map;
 import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 
-public class Microflows
+public final class Microflows
 {
 	/**
-	 * @deprecated
-	 * The default constructor of the Microflows class should not be used.
-	 * Use the static microflow invocation methods instead.
+	 * Private constructor to prevent instantiation of this class. 
 	 */
-	@java.lang.Deprecated(since = "9.12", forRemoval = true)
-	public Microflows() {}
+	private Microflows() {}
 
 	// These are the microflows for the TestNativeEncodedImageViewer module
-	public static void aCT_TestImage_Save(IContext context, testnativeencodedimageviewer.proxies.TestImage _testImage)
+	public static com.mendix.core.actionmanagement.MicroflowCallBuilder aCT_TestImage_SaveBuilder(
+		testnativeencodedimageviewer.proxies.TestImage _testImage
+	)
 	{
-		Map<java.lang.String, Object> params = new HashMap<>();
-		params.put("TestImage", _testImage == null ? null : _testImage.getMendixObject());
-		Core.microflowCall("TestNativeEncodedImageViewer.ACT_TestImage_Save").withParams(params).execute(context);
+		com.mendix.core.actionmanagement.MicroflowCallBuilder builder = Core.microflowCall("TestNativeEncodedImageViewer.ACT_TestImage_Save");
+		builder = builder.withParam("TestImage", _testImage);
+		return builder;
+	}
+
+	public static void aCT_TestImage_Save(
+		IContext context,
+		testnativeencodedimageviewer.proxies.TestImage _testImage
+	)
+	{
+		aCT_TestImage_SaveBuilder(
+				_testImage
+			)
+			.execute(context);
 	}
 }
