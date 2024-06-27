@@ -69,6 +69,7 @@ public class UserActionsRegistrar
     registrator.registerUserAction(communitycommons.actions.RandomHash.class);
     registrator.registerUserAction(communitycommons.actions.RandomString.class);
     registrator.registerUserAction(communitycommons.actions.RandomStrongPassword.class);
+    registrator.registerUserAction(communitycommons.actions.RandomStrongPasswordWithLowercase.class);
     registrator.registerUserAction(communitycommons.actions.recommitInBatches.class);
     registrator.registerUserAction(communitycommons.actions.refreshClass.class);
     registrator.registerUserAction(communitycommons.actions.refreshClassByObject.class);

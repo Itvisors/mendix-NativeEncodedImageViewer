@@ -1,7 +1,7 @@
 {
   "name": "nativeencodedimageviewer",
   "widgetName": "NativeEncodedImageViewer",
-  "version": "3.2.0",
+  "version": "3.3.0",
   "description": "Native base64 encoded image viewer ",
   "copyright": "ITvisors 2020",
   "author": "Marcel Groeneweg",
@@ -22,15 +22,19 @@
     "release": "pluggable-widgets-tools release:native"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^9.24.0"
+    "@mendix/pluggable-widgets-tools": "^10.12.0"
   },
   "dependencies": {},
   "resolutions": {
     "react": "18.2.0",
-    "react-native": "0.70.7"
+    "react-native": "0.72.7",
+    "@types/react": "18.2.0",
+    "@types/react-native": "0.72.7"
   },
   "overrides": {
     "react": "18.2.0",
-    "react-native": "0.70.7"
+    "react-native": "0.72.7",
+    "@types/react": "18.2.0",
+    "@types/react-native": "0.72.7"
   }
 }

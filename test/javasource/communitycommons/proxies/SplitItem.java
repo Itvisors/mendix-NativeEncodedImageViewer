@@ -145,13 +145,13 @@ public class SplitItem implements com.mendix.systemwideinterfaces.core.IEntityPr
 		getMendixObject().setValue(context, MemberNames.Value.toString(), value);
 	}
 
-	@Override
+	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IMendixObject getMendixObject()
 	{
 		return splitItemMendixObject;
 	}
 
-	@Override
+	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IContext getContext()
 	{
 		return context;

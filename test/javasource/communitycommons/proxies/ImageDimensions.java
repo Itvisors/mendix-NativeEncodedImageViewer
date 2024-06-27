@@ -145,13 +145,13 @@ public class ImageDimensions implements com.mendix.systemwideinterfaces.core.IEn
 		getMendixObject().setValue(context, MemberNames.Width.toString(), width);
 	}
 
-	@Override
+	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IMendixObject getMendixObject()
 	{
 		return imageDimensionsMendixObject;
 	}
 
-	@Override
+	@java.lang.Override
 	public final com.mendix.systemwideinterfaces.core.IContext getContext()
 	{
 		return context;
