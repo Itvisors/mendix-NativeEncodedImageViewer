@@ -6,81 +6,79 @@ package nativemobileresources.proxies;
 
 public enum Enum_Permissions
 {
-	APP_TRACKING_TRANSPARENCY_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "APP_TRACKING_TRANSPARENCY_IOS" } }),
-	BLUETOOTH_PERIPHERAL_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "BLUETOOTH_PERIPHERAL_IOS" } }),
-	CAMERA_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "CAMERA_IOS" } }),
-	CALENDARS_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "CALENDARS_IOS" } }),
-	CONTACTS_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "CONTACTS_IOS" } }),
-	FACE_ID_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "FACE_ID_IOS" } }),
-	LOCATION_ALWAYS_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "LOCATION_ALWAYS_IOS" } }),
-	LOCATION_WHEN_IN_USE_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "LOCATION_WHEN_IN_USE_IOS" } }),
-	MEDIA_LIBRARY_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "MEDIA_LIBRARY_IOS" } }),
-	MICROPHONE_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "MICROPHONE_IOS" } }),
-	MOTION_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "MOTION_IOS" } }),
-	PHOTO_LIBRARY_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "PHOTO_LIBRARY_IOS" } }),
-	PHOTO_LIBRARY_ADD_ONLY_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "PHOTO_LIBRARY_ADD_ONLY_IOS" } }),
-	REMINDERS_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "REMINDERS_IOS" } }),
-	SIRI_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "SIRI_IOS" } }),
-	SPEECH_RECOGNITION_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "SPEECH_RECOGNITION_IOS" } }),
-	STOREKIT_IOS(new java.lang.String[][] { new java.lang.String[] { "en_US", "STOREKIT_IOS" } }),
-	ACCEPT_HANDOVER_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ACCEPT_HANDOVER_ANDROID" } }),
-	ACCESS_BACKGROUND_LOCATION_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ACCESS_BACKGROUND_LOCATION_ANDROID" } }),
-	ACCESS_COARSE_LOCATION_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ACCESS_COARSE_LOCATION_ANDROID" } }),
-	ACCESS_FINE_LOCATION_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ACCESS_FINE_LOCATION_ANDROID" } }),
-	ACCESS_MEDIA_LOCATION_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ACCESS_MEDIA_LOCATION_ANDROID" } }),
-	ACTIVITY_RECOGNITION_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ACTIVITY_RECOGNITION_ANDROID" } }),
-	ADD_VOICEMAIL_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ADD_VOICEMAIL_ANDROID" } }),
-	ANSWER_PHONE_CALLS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "ANSWER_PHONE_CALLS_ANDROID" } }),
-	BLUETOOTH_ADVERTISE_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "BLUETOOTH_ADVERTISE_ANDROID" } }),
-	BLUETOOTH_CONNECT_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "BLUETOOTH_CONNECT_ANDROID" } }),
-	BLUETOOTH_SCAN_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "BLUETOOTH_SCAN_ANDROID" } }),
-	BODY_SENSORS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "BODY_SENSORS_ANDROID" } }),
-	CALL_PHONE_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "CALL_PHONE_ANDROID" } }),
-	CAMERA_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "CAMERA_ANDROID" } }),
-	GET_ACCOUNTS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "GET_ACCOUNTS_ANDROID" } }),
-	PROCESS_OUTGOING_CALLS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "PROCESS_OUTGOING_CALLS_ANDROID" } }),
-	READ_CALENDAR_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_CALENDAR_ANDROID" } }),
-	READ_CALL_LOG_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_CALL_LOG_ANDROID" } }),
-	READ_CONTACTS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_CONTACTS_ANDROID" } }),
-	READ_EXTERNAL_STORAGE_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_EXTERNAL_STORAGE_ANDROID" } }),
-	READ_PHONE_NUMBERS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_PHONE_NUMBERS_ANDROID" } }),
-	READ_PHONE_STATE_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_PHONE_STATE_ANDROID" } }),
-	READ_SMS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_SMS_ANDROID" } }),
-	RECEIVE_MMS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "RECEIVE_MMS_ANDROID" } }),
-	RECEIVE_SMS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "RECEIVE_SMS_ANDROID" } }),
-	RECEIVE_WAP_PUSH_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "RECEIVE_WAP_PUSH_ANDROID" } }),
-	RECORD_AUDIO_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "RECORD_AUDIO_ANDROID" } }),
-	SEND_SMS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "SEND_SMS_ANDROID" } }),
-	USE_SIP_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "USE_SIP_ANDROID" } }),
-	WRITE_CALENDAR_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "WRITE_CALENDAR_ANDROID" } }),
-	WRITE_CALL_LOG_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "WRITE_CALL_LOG_ANDROID" } }),
-	WRITE_CONTACTS_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "WRITE_CONTACTS_ANDROID" } }),
-	WRITE_EXTERNAL_STORAGE_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "WRITE_EXTERNAL_STORAGE_ANDROID" } }),
-	SCHEDULE_EXACT_ALARM_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "SCHEDULE_EXACT_ALARM_ANDROID" } }),
-	READ_MEDIA_VISUAL_USER_SELECTED_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_MEDIA_VISUAL_USER_SELECTED_ANDROID" } }),
-	READ_MEDIA_VIDEO_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_MEDIA_VIDEO_ANDROID" } }),
-	READ_MEDIA_IMAGES_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_MEDIA_IMAGES_ANDROID" } }),
-	READ_MEDIA_AUDIO_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "READ_MEDIA_AUDIO_ANDROID" } }),
-	NEARBY_WIFI_DEVICES_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "NEARBY_WIFI_DEVICES_ANDROID" } }),
-	BODY_SENSORS_BACKGROUND_ANDROID(new java.lang.String[][] { new java.lang.String[] { "en_US", "BODY_SENSORS_BACKGROUND_ANDROID" } });
+	APP_TRACKING_TRANSPARENCY_IOS("5cc136f3-d021-4e07-b558-ab612ee93c2d"),
+	BLUETOOTH_PERIPHERAL_IOS("7b625b44-ee3c-4976-af46-cc7cb2674751"),
+	CAMERA_IOS("e05deb54-18e8-44c3-802e-15ccd551286d"),
+	CALENDARS_IOS("8dac9ce0-4bff-4f6b-bf15-59232599cbb3"),
+	CONTACTS_IOS("849832f7-1c04-45d3-81bd-63f57f1f6de1"),
+	FACE_ID_IOS("f3e7db82-ce77-40c7-b573-c7bffac8c8b8"),
+	LOCATION_ALWAYS_IOS("0d68dc9d-e023-49fa-aad3-4a343a489413"),
+	LOCATION_WHEN_IN_USE_IOS("dbd2f5e8-6dc9-40fe-9cc5-c515c5dff279"),
+	MEDIA_LIBRARY_IOS("14853e79-2d6e-4233-9847-c755a1d37cf5"),
+	MICROPHONE_IOS("23003bd8-df36-4658-af25-2742db7804b5"),
+	MOTION_IOS("b3aa1917-1af9-42f1-b05e-02bb33f85ed4"),
+	PHOTO_LIBRARY_IOS("e72ddae5-a99e-452e-b709-5ac61fa8104d"),
+	PHOTO_LIBRARY_ADD_ONLY_IOS("d56e50ea-f3a8-4cb3-a0ba-6d2e3f7f2b4e"),
+	REMINDERS_IOS("b1214519-3542-4cc5-861d-1dbd3eef663b"),
+	SIRI_IOS("cd1b71bd-c39a-4ea4-bec3-abbe7e447e66"),
+	SPEECH_RECOGNITION_IOS("bc1b1f7a-14e0-44b0-bb98-71ab336d1553"),
+	STOREKIT_IOS("bb43bce1-e19b-4863-9aa8-1aaeac14ca62"),
+	ACCEPT_HANDOVER_ANDROID("47d351bd-3987-4bb8-87ae-24d858674a81"),
+	ACCESS_BACKGROUND_LOCATION_ANDROID("6ba6603d-ee25-43ba-b02b-76e7de124d81"),
+	ACCESS_COARSE_LOCATION_ANDROID("acdb8b5d-4a42-412d-a5f6-55f09ae249d6"),
+	ACCESS_FINE_LOCATION_ANDROID("abd2210d-85bf-42af-876b-287e467938f4"),
+	ACCESS_MEDIA_LOCATION_ANDROID("4e588a9f-bfe8-47a1-87b1-9b9034eca591"),
+	ACTIVITY_RECOGNITION_ANDROID("d29532f7-e668-47e3-a77a-a4ca6d95167f"),
+	ADD_VOICEMAIL_ANDROID("9bb71c36-ab3b-440b-aa15-044869f80554"),
+	ANSWER_PHONE_CALLS_ANDROID("d7d76af5-eb01-4222-98a3-918befc9e594"),
+	BLUETOOTH_ADVERTISE_ANDROID("fc87aa27-8020-4c07-a480-72905faf2abb"),
+	BLUETOOTH_CONNECT_ANDROID("12c1a7ad-98e2-4deb-8a25-438532a3c91b"),
+	BLUETOOTH_SCAN_ANDROID("c54e761e-19e0-4c3b-a1eb-9d817c52a3b3"),
+	BODY_SENSORS_ANDROID("bd5d2403-6546-479a-90c1-c21a0501af2d"),
+	CALL_PHONE_ANDROID("ab700e8c-4e1e-4041-8999-b1bddae93f7c"),
+	CAMERA_ANDROID("3b431a29-25eb-4e00-9c6a-b8af9f784d1a"),
+	GET_ACCOUNTS_ANDROID("04e94a92-a172-410a-87b8-90cf179c9cfd"),
+	PROCESS_OUTGOING_CALLS_ANDROID("b3061c74-1579-4b17-bb31-6a298f4ee6cf"),
+	READ_CALENDAR_ANDROID("c0d2ea2d-57d6-4cfc-adf0-66b58651daf9"),
+	READ_CALL_LOG_ANDROID("3e4fa7cd-975e-4cfb-b354-e870287ad4c3"),
+	READ_CONTACTS_ANDROID("1c8264dc-8697-4173-9b22-c0571ea79548"),
+	READ_EXTERNAL_STORAGE_ANDROID("65a5a652-ebb8-4792-8323-2940746aa474"),
+	READ_PHONE_NUMBERS_ANDROID("4b4d1ba8-9311-4af3-afdf-a1123538bc56"),
+	READ_PHONE_STATE_ANDROID("59479587-3ba8-4d4c-b220-8f6d61d2d387"),
+	READ_SMS_ANDROID("7002024f-73a8-427a-859a-7f24c678cb9a"),
+	RECEIVE_MMS_ANDROID("f720af70-9830-4644-aae0-a75553e44dd2"),
+	RECEIVE_SMS_ANDROID("a5653663-1c5a-4b77-8e29-aa5946cc716c"),
+	RECEIVE_WAP_PUSH_ANDROID("0d7d7923-eaf8-47ed-93f1-ac7fa2b7b327"),
+	RECORD_AUDIO_ANDROID("d844cb17-d3c7-4b00-bbae-3005e11fc981"),
+	SEND_SMS_ANDROID("d9f88af3-9b7b-4090-b699-bac3294b54dc"),
+	USE_SIP_ANDROID("95abdd15-c49d-4a31-bb30-074ef2388782"),
+	WRITE_CALENDAR_ANDROID("96beb797-6735-4385-8738-84bff73fb178"),
+	WRITE_CALL_LOG_ANDROID("f25de4fb-a79a-47a5-a088-7d25c9a3d298"),
+	WRITE_CONTACTS_ANDROID("10830071-abfc-4afa-b6a7-f3902b15723f"),
+	WRITE_EXTERNAL_STORAGE_ANDROID("f3e2f8bf-786d-4c1d-805d-a98510c01fce"),
+	SCHEDULE_EXACT_ALARM_ANDROID("8b175a9f-c8c6-4eba-974b-7eb42f83f8e7"),
+	READ_MEDIA_VISUAL_USER_SELECTED_ANDROID("358f1f10-c7d1-424e-ab7f-155d3a9d44a9"),
+	READ_MEDIA_VIDEO_ANDROID("6d9249dd-94ad-436b-b97d-5f446d686186"),
+	READ_MEDIA_IMAGES_ANDROID("5de5e6d9-8ec5-44d6-937e-d284601d1638"),
+	READ_MEDIA_AUDIO_ANDROID("7d09d957-e860-4fe8-83d1-1c2951ee5048"),
+	NEARBY_WIFI_DEVICES_ANDROID("f767a7eb-c359-4c0b-8c5a-8b97c880a0ec"),
+	BODY_SENSORS_BACKGROUND_ANDROID("9f25beae-72f4-40e6-aa57-db1d616c39fe");
 
-	private final java.util.Map<java.lang.String, java.lang.String> captions;
-
-	private Enum_Permissions(java.lang.String[][] captionStrings)
+	private final java.lang.String i18nCaptionKey;
+	
+	private Enum_Permissions(java.lang.String i18nCaptionKey)
 	{
-		this.captions = new java.util.HashMap<>();
-		for (java.lang.String[] captionString : captionStrings) {
-			captions.put(captionString[0], captionString[1]);
-		}
+		this.i18nCaptionKey = i18nCaptionKey;
 	}
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		return captions.getOrDefault(languageCode, "en_US");
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return captions.get("en_US");
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

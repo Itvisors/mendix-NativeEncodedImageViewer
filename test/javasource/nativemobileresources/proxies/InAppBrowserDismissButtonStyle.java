@@ -6,27 +6,25 @@ package nativemobileresources.proxies;
 
 public enum InAppBrowserDismissButtonStyle
 {
-	done(new java.lang.String[][] { new java.lang.String[] { "en_US", "Done" } }),
-	close(new java.lang.String[][] { new java.lang.String[] { "en_US", "Close" } }),
-	cancel(new java.lang.String[][] { new java.lang.String[] { "en_US", "Cancel" } });
+	done("f5caa877-3b5a-44aa-9569-9c06e779c59a"),
+	close("183e43b9-116c-4325-86bd-b27d9f4dfd56"),
+	cancel("13976f3b-ae80-4920-8627-26eaf337a7a1");
 
-	private final java.util.Map<java.lang.String, java.lang.String> captions;
-
-	private InAppBrowserDismissButtonStyle(java.lang.String[][] captionStrings)
+	private final java.lang.String i18nCaptionKey;
+	
+	private InAppBrowserDismissButtonStyle(java.lang.String i18nCaptionKey)
 	{
-		this.captions = new java.util.HashMap<>();
-		for (java.lang.String[] captionString : captionStrings) {
-			captions.put(captionString[0], captionString[1]);
-		}
+		this.i18nCaptionKey = i18nCaptionKey;
 	}
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		return captions.getOrDefault(languageCode, "en_US");
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return captions.get("en_US");
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

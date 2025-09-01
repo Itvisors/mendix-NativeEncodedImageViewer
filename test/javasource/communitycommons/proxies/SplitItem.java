@@ -47,7 +47,7 @@ public class SplitItem implements com.mendix.systemwideinterfaces.core.IEntityPr
 		if (splitItemMendixObject == null) {
 			throw new java.lang.IllegalArgumentException("The given object cannot be null.");
 		}
-		if (!com.mendix.core.Core.isSubClassOf(entityName, splitItemMendixObject.getType())) {
+		if (!splitItemMendixObject.isInstanceOf(entityName)) {
 			throw new java.lang.IllegalArgumentException(String.format("The given object is not a %s", entityName));
 		}	
 

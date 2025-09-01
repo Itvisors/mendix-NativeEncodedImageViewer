@@ -60,9 +60,11 @@ public class UserActionsRegistrar
     registrator.registerUserAction(communitycommons.actions.ListTop.class);
     registrator.registerUserAction(communitycommons.actions.LongToDateTime.class);
     registrator.registerUserAction(communitycommons.actions.memberHasChanged.class);
+    registrator.registerUserAction(communitycommons.actions.memberHasChangedValue.class);
     registrator.registerUserAction(communitycommons.actions.MergeMultiplePdfs.class);
     registrator.registerUserAction(communitycommons.actions.MonthsBetween.class);
     registrator.registerUserAction(communitycommons.actions.objectHasChanged.class);
+    registrator.registerUserAction(communitycommons.actions.objectHasChangedMemberValue.class);
     registrator.registerUserAction(communitycommons.actions.objectIsNew.class);
     registrator.registerUserAction(communitycommons.actions.OverlayPdfDocument.class);
     registrator.registerUserAction(communitycommons.actions.ParseDateTimeWithTimezone.class);

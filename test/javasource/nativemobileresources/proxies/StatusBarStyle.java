@@ -6,27 +6,25 @@ package nativemobileresources.proxies;
 
 public enum StatusBarStyle
 {
-	DefaultStyle(new java.lang.String[][] { new java.lang.String[] { "en_US", "Default (dark text on iOS, light text on Android)" } }),
-	LightContentStyle(new java.lang.String[][] { new java.lang.String[] { "en_US", "Light text" } }),
-	DarkContentStyle(new java.lang.String[][] { new java.lang.String[] { "en_US", "Dark text" } });
+	DefaultStyle("67ed6ad6-91f8-49a4-8ce0-c4559053769d"),
+	LightContentStyle("7fe8e203-e237-43bb-b690-1a3dba7d642d"),
+	DarkContentStyle("e94e4788-c421-4f9d-af4d-e594b82f6f5a");
 
-	private final java.util.Map<java.lang.String, java.lang.String> captions;
-
-	private StatusBarStyle(java.lang.String[][] captionStrings)
+	private final java.lang.String i18nCaptionKey;
+	
+	private StatusBarStyle(java.lang.String i18nCaptionKey)
 	{
-		this.captions = new java.util.HashMap<>();
-		for (java.lang.String[] captionString : captionStrings) {
-			captions.put(captionString[0], captionString[1]);
-		}
+		this.i18nCaptionKey = i18nCaptionKey;
 	}
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		return captions.getOrDefault(languageCode, "en_US");
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return captions.get("en_US");
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }

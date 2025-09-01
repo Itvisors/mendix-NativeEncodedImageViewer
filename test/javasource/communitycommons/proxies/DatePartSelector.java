@@ -6,27 +6,25 @@ package communitycommons.proxies;
 
 public enum DatePartSelector
 {
-	year(new java.lang.String[][] { new java.lang.String[] { "en_US", "year" }, new java.lang.String[] { "nl_NL", "jaar" } }),
-	month(new java.lang.String[][] { new java.lang.String[] { "en_US", "month" }, new java.lang.String[] { "nl_NL", "maand" } }),
-	day(new java.lang.String[][] { new java.lang.String[] { "en_US", "day" }, new java.lang.String[] { "nl_NL", "dag" } });
+	year("6411a586-0c3c-450f-b667-6b55696af869"),
+	month("7b563f4a-120f-4169-ad46-a2ae4a694862"),
+	day("2327cc82-e275-452f-84d1-f98c11b7f64d");
 
-	private final java.util.Map<java.lang.String, java.lang.String> captions;
-
-	private DatePartSelector(java.lang.String[][] captionStrings)
+	private final java.lang.String i18nCaptionKey;
+	
+	private DatePartSelector(java.lang.String i18nCaptionKey)
 	{
-		this.captions = new java.util.HashMap<>();
-		for (java.lang.String[] captionString : captionStrings) {
-			captions.put(captionString[0], captionString[1]);
-		}
+		this.i18nCaptionKey = i18nCaptionKey;
 	}
 
 	public java.lang.String getCaption(java.lang.String languageCode)
 	{
-		return captions.getOrDefault(languageCode, "en_US");
+		String caption = com.mendix.core.Core.getInternationalizedString(languageCode, i18nCaptionKey);
+		return caption.isEmpty() ? getCaption() : caption;
 	}
 
 	public java.lang.String getCaption()
 	{
-		return captions.get("en_US");
+		return com.mendix.core.Core.getInternationalizedString("en_US", i18nCaptionKey);
 	}
 }
