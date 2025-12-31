@@ -6,12 +6,12 @@ package communitycommons.proxies;
 
 public enum StandardEncodings
 {
-	US_ASCII("788abc70-a200-4a16-afb7-cefd3d8713cc"),
-	ISO_8859_1("ad6ca8a7-94c0-4020-b094-579da0d37154"),
-	UTF_8("8ffbab03-8e48-4d7c-b9c5-34af51037c48"),
-	UTF_16BE("e857a15e-9c49-438f-a8e8-2027506bf019"),
-	UTF_16LE("ee262d50-a37f-4a2f-bfec-40feaba34a51"),
-	UTF_16("19b2136f-a41e-48b7-98aa-8180953254d3");
+	US_ASCII("50b24e17-fcf7-48f2-adce-620213c1260f"),
+	ISO_8859_1("16ed2277-8f25-4a11-ae15-d761351ad6ee"),
+	UTF_8("8dd1d188-89e9-4354-b6d0-e82b8d71ad5c"),
+	UTF_16BE("544b7489-99bc-4677-a6b5-a49773252a4b"),
+	UTF_16LE("60027527-6a73-45c0-a192-adc955a98611"),
+	UTF_16("597c72f8-1b4d-4ec0-a7e8-94992446bbdf");
 
 	private final java.lang.String i18nCaptionKey;
 	
