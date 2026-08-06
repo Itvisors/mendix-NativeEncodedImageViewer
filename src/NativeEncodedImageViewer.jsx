@@ -1,5 +1,5 @@
 import { Image, PixelRatio, View } from "react-native";
-import { createElement, useState } from "react";
+import { useState } from "react";
 
 export function NativeEncodedImageViewer(props) {
     const [layout, setLayout] = useState(null);
